@@ -1,0 +1,39 @@
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import javax.swing.*;
+
+
+public class main {
+	JTextField normtext = new JTextField("Введите незашифрованый текст", 30);
+	JTextField encrtext = new JTextField("Введите зашифрованный текст", 30);
+	JTextField keytext = new JTextField("Введите ключ (если вы шифруете)", 30);
+	JButton encrypt = new JButton("Зашифровать");
+	JButton decrypt = new JButton("Дешифровать");
+	JLabel explain = new JLabel("Введите текст в соответствующее поле в зависимости от вашей цели");
+	JPanel textpanel = new JPanel();
+	JPanel buttonpanel = new JPanel();
+	JFrame frame = new JFrame("Coder by Kolos Dima");
+	FlowLayout fl = new FlowLayout();
+	BorderLayout bl1 = new BorderLayout();
+	BorderLayout bl = new BorderLayout();
+	main(){
+		textpanel.setLayout(bl1);
+		textpanel.add("West", normtext);
+		textpanel.add("East", encrtext);
+		textpanel.add("South", keytext);
+		buttonpanel.setLayout(fl);
+		buttonpanel.add(encrypt);
+		buttonpanel.add(decrypt);
+		frame.setLayout(bl);
+		frame.add("North", explain);
+		frame.add("Center", textpanel);
+		frame.add("South", buttonpanel);
+		frame.pack();
+		frame.setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		main m = new main();
+	}
+
+}

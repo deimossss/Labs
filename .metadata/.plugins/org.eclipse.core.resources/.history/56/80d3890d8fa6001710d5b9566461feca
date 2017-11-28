@@ -1,0 +1,16 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class Coder implements ActionListener{
+	View parent;
+	Coder(View parent){
+		this.parent = parent;
+	}
+	public void actionPerformed(ActionEvent e){
+		String result;
+	}
+
+}
+
+

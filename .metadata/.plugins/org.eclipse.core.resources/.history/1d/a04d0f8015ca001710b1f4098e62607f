@@ -1,0 +1,12 @@
+package by.bntu.fitr.laba7;
+
+import by.bntu.fitr.laba7.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Matrix m = new Matrix(Creator.filling(Creator.create()));
+		View.print("Search number is "+Searcher.source(m));
+	}
+
+}

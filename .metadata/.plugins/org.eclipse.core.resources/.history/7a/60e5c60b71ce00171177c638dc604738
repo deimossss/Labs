@@ -1,0 +1,16 @@
+package by.bntu.fitr.xcode;
+
+import org.junit.Test;
+import org.junit.Assert;
+
+public class DragonTest {
+	
+	@Test
+	public void headsTest(){
+		Dragon d = new Dragon();
+		int age = 349;
+		int res1 = d.heads(age);
+		if(res1 = )
+		
+	}
+}

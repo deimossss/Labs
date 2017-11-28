@@ -1,0 +1,27 @@
+package by.bntu.fitr.xcode;
+
+import java.util.Scanner;
+
+public class View {
+	public static void menu(){
+		System.out.println("1 - Heads and eyes of Dragon");
+		System.out.println("2 - Mood Sensor");
+		System.out.println("3 - Dice");
+		System.out.println("4 - Word Tester");
+		System.out.println("5 - Quad equation");
+	}
+	
+	public static int input_int(){
+		Scanner scan = new Scanner(System.in);
+		int res = scan.nextInt();
+		scan.close();
+		return res;
+	}
+	
+
+	
+	public static void print(String a){
+		System.out.println(a);
+	}
+}
+

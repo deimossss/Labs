@@ -1,0 +1,45 @@
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		int ch;
+		View v = new View();
+		v.menu();
+		v.print("Input number of program");
+		ch = v.inp();
+		switch(ch){
+		case 1:
+			Dragon dr = new Dragon();
+			v.print("Input age of dragon");
+			int a = dr.heads(v.inp());
+			v.print("dragon has "+a+" heads and "+dr.eyes(a)+" eyes");
+			break;
+		case 2:
+			Mood_sensor ms = new Mood_sensor();
+			v.print(ms.create_mood());
+			break;
+		case 3:
+			Dice d = new Dice();
+			v.print(d.game());
+			break;
+		case 4:
+			Word_tester wt = new Word_tester();
+			v.print("input letter");
+			char word = v.inpc();
+			if(wt.test_word(word)){
+				v.print("letter is vowel");
+			}else{
+				v.print("letter is consonant");
+			}
+			
+			break;
+		case 5:
+			v.print("input a, b, c");
+			Quad_equal qu = new Quad_equal(v.inpd(), v.inpd(), v.inpd());
+			qu.D = qu.search_discriminant(qu.a, qu.b, qu.c);
+			v.print(qu.search_root(qu.a, qu.b, qu.D));
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+package by.bntu.xcode.test;
+
+import org.junit.Test;
+import org.junit.Assert;
+import by.bntu.xcode.Controller.Searcher;
+import by.bntu.xcode.model.Vector;
+
+public class SearcherTest {
+	
+	@Test
+	public void minSearcherTest(){
+		int[] mas = {1, 2, 3, 4, 5 ,6, -7, -8};
+		Vector v = new Vector(mas);
+		int res = 8;
+		if(res != Searcher.minSearcher(v)){
+			Assert.fail();
+		}
+	}
+}

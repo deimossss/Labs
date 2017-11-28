@@ -1,0 +1,16 @@
+package by.bntu.fitr.laba7;
+
+import by.bntu.fitr.laba7.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int a = Creator.getDimension();
+		Matrix m = Creator.create(a, a);
+		m = Creator.filling(m);
+		View.print("Search number is ");
+		View.print("Dimension of matrix = "+a);
+		View.print_arr(Searcher.source(m));
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;by.bntu.fitr.xcode.Word_teste&apos; to &apos;Word_tester&apos;&#x0A;- Original project: &apos;lab31&apos;&#x0A;- Original element: &apos;by.bntu.fitr.xcode.Word_teste&apos;&#x0A;- Renamed element: &apos;by.bntu.fitr.xcode.Word_tester&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Word_teste&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;by.bntu.fitr.xcode{Word_teste.java[Word_teste" matchStrategy="1" name="Word_tester" qualified="false" references="true" similarDeclarations="false" stamp="1509069168843" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class View {
+	public void menu(){
+		System.out.println("1 - Heads and eyes of Dragon");
+		System.out.println("2 - Mood Sensor");
+		System.out.println("3 - Dice");
+		System.out.println("4 - dirty Dice");
+		System.out.println("5 - Word Tester");
+		System.out.println("6 - Quad equation");
+	}
+	
+	public int inp(){
+		Scanner s = new Scanner(System.in);
+		int res = 0;
+		if(s.hasNextInt()){
+			res = s.nextInt();
+		}
+		s.close();
+		return res;
+	}
+	
+	public char inpc(){
+		Scanner s = new Scanner(System.in);
+		char res;
+		String a;
+		a = s.next();
+		res = a.charAt(0);
+		s.close();
+		return res;
+	}
+	
+	public double inpd(){
+		Scanner sc = new Scanner(System.in);
+		double result;
+		while(true){
+			System.out.println("Input Double");
+			if(sc.hasNextDouble() && sc.nextDouble()>=1 && sc.nextDouble()<=6){
+				result = sc.nextDouble();
+				sc.close();
+				return result;
+			}
+			System.out.println("invalid value try again");
+		}
+	}
+	
+	public void print(String a){
+		System.out.println(a);
+	}
+}

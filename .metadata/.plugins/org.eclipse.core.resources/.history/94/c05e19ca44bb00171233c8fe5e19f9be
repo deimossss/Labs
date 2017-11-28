@@ -1,0 +1,32 @@
+package by.bntu.fitr.xcode;
+
+import by.bntu.fitr.xcode.View.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int ch;
+		View.menu();
+		View.print("Input number of your choice");
+		ch = View.input_int();
+		switch(ch){
+		case 1:
+			Dragon dr = new Dragon();
+			View.print("Input age of dragon");
+			int age = View.input_int();
+			int head = dr.heads(age);
+			View.print("Dragon has "+head+" heads and "+dr.eyes(head)+" eyes");
+			break;
+		case 2:
+			Mood_sensor ms = new Mood_sensor();
+			View.print(ms.create_mood());
+			break;
+		case 3:
+			Dice dc = new Dice();
+			View.print(dc.game());
+			break;
+		case 4:
+			
+		}
+	}
+}

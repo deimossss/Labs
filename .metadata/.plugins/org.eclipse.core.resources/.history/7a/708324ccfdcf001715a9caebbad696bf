@@ -1,0 +1,8 @@
+package by.bntu.fitr.xcode;
+
+public class Smoother {
+	
+	public Matrix smooth(Matrix m){
+		
+	}
+}

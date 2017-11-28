@@ -1,0 +1,13 @@
+package by.bntu.fitr.laba7;
+
+import by.bntu.fitr.laba7.Creator;
+
+public class Matrix {
+	private int[][] matrix;
+	
+	public int[][] getMatrix(){
+		return this.matrix;
+	}
+	
+
+}

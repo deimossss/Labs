@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class test1 {
+	
+	public static double search_discriminant(double a, double b, double c){
+		return b*b-4*a*c;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(search_discriminant(1,4,2));
+	}
+}

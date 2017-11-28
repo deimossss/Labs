@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;word_tester&apos; to &apos;Word_tester&apos;&#x0A;- Original project: &apos;laba3&apos;&#x0A;- Original element: &apos;word_tester&apos;&#x0A;- Renamed element: &apos;Word_tester&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;word_tester&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{word_tester.java[word_tester" matchStrategy="1" name="Word_tester" qualified="false" references="true" similarDeclarations="false" stamp="1508897958759" textual="false" version="1.0"/>
+</session>

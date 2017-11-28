@@ -1,0 +1,20 @@
+package by.bntu.xcode.Controller;
+
+import by.bntu.xcode.model.Vector;
+import java.util.Random;
+
+public class Creator {
+	
+	public static Vector create(int len){
+		Vector v = new Vector(len);
+		return v;
+	}
+	
+	public static Vector filling(Vector v){
+		Random rand = new Random();
+		for(int i = 0; i<v.getLength(); i++){
+			v.getElm(i, rand.nextInt(15) + 1);
+		}
+		return v;
+	}
+}

@@ -1,0 +1,7 @@
+
+public class coder {
+	void code(){
+		System.out.println("Manyyearsago");
+	}
+
+}

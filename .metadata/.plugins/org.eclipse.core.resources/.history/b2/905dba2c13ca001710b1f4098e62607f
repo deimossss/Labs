@@ -1,0 +1,25 @@
+package by.bntu.fitr.laba7;
+
+import java.util.Random;
+
+public class Creator {
+	
+	public int[][] create(){
+		Random rand = new Random();
+		int a = rand.nextInt(10);
+		int b = rand.nextInt(10);
+		int[][] matrix = new int[a][b];
+		return matrix;
+	}
+	
+	public int[][] filling(int m[][]){
+		Random rand = new Random();
+		for(int i = 0; i<m.length; i++){
+			for(int j = 0; j<m[0].length; j++){
+				m[i][j] = rand.nextInt(15);
+			}
+		}
+		return m;
+	}
+
+}

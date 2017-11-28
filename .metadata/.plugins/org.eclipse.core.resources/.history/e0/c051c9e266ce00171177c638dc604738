@@ -1,0 +1,29 @@
+package by.bntu.fitr.laba7;
+
+import java.util.List;
+
+import by.bntu.fitr.laba7.Creator;
+
+public class Matrix {
+	private int[][] matrix;
+	
+	public int[][] getMatrix(){
+		return matrix;
+	}
+	
+	public int getElement(int i, int j){
+		return matrix[i][j];
+	}
+	
+	public Matrix(int a, int b){
+		matrix = new  int[a][b];
+	}
+	
+	public int getLength(){
+		return matrix.length;
+	}
+	
+	public int getLengthColumns(){
+		return matrix[0].length;
+	}
+}

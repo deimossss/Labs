@@ -1,0 +1,15 @@
+package by.bntu.fitr.xcode;
+
+public class Smoother {
+	
+	public Matrix smooth(Matrix m){
+		int num;
+		for(int i = 1; i<m.getLength() - 1; i++){
+			for(int j = 1; j<m.getLengthColumns() - 1; j++){
+				num = (m.giveElm(i-1,j-1)+m.giveElm(i-1, j+1)+m.giveElm(i+1, j-1)+m.giveElm(i+1, j+1))/4;
+				m.getElm(i, j, num);
+			}
+		}
+		return m;
+	}
+}

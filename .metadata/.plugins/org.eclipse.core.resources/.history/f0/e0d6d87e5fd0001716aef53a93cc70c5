@@ -1,0 +1,30 @@
+package by.bntu.xcode.Controller;
+
+import by.bntu.xcode.model.Vector;
+
+public class Searcher {
+	
+	public static int minSearcher(Vector v){
+		int min = 2;
+		for(int i = 0; i<v.getLength(); i++){
+			if(min == 2 && v.giveElm(i)%2 == 1){
+				min = Math.abs(v.giveElm(i));
+			}
+			if(min > v.giveElm(i)){
+				min = Math.abs(v.giveElm(i));
+			}
+		}
+		if(min == 2) min = 0;
+		return min;
+	}
+	
+	public static int countEvenNums(Vector v){
+		int count = 0;
+		for(int i = 0; i<v.getLength(); i++){
+			if(v.giveElm(i) % 2 == 0){
+				count++;
+			}
+		}
+		return count;
+	}
+}
